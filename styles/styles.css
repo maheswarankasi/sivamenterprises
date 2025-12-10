@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Back to top */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: firebrick;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid firebrick;
+  text-align: center;
+  border-radius: 50%;
+  padding: 4px 3px;
+}
+#backToTop i {
+  font-size: 1.3rem;
+}
+#backToTop:hover {
+  background-color: transparent;
+  color: firebrick;
+}
+
+.container {
+  margin: 1.2rem auto;
+}
+
+nav .navbar-brand {
+  width: 50%;
+}
+
+nav .navbar-brand img {
+  width: 15%;
+}
+header .navbar .offcanvas {
+  width: 200px;
+}
+#homepage header {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.6)),
+    url("../assets/images/banner-bg.jpg") no-repeat top left;
+  background-size: cover;
+  height: 100vh;
+}
+.headline-sect {
+  margin: 2rem auto;
+  text-align: center;
+  color: #fff;
+}
+.headline-sect h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+}
+.headline-sect h4 {
+  font-size: 1.2rem;
+  color: #d2d2d2;
+  padding-top: 4rem;
+}
+.headline-sect .btn {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: firebrick;
+  border: none;
+  outline: none;
+  transition: all 0.3s linear;
+}
+.headline-sect .btn:hover{
+  background-color: rgb(169, 13, 13);
+}
+
+.container h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+}
+.container p {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+#about-us .about-us-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding:0 2rem;
+  gap: 20px;
+  color: #333;
+}
+#about-us .about-us-spec{
+  padding: 0;
+}
+#locations .locations-list {
+  margin: 0 auto;
+  padding-left: 5rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+footer .container p, footer .container a, footer .container address, footer h4  {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 1.2rem;
+}
+footer h4 {
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  nav .navbar-brand img {
+    width: 25%;
+  }
+  .headline-sect h1 {
+    font-size: 2rem;
+  }
+  .headline-sect h4{
+    padding-top: 2rem;
+  }
+  .headline-sect .btn {
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .container h2 {
+    font-size: 1.3rem;
+  }
+  footer h4 {
+    font-size: 1.2rem;
+  }
+  .container p, .about-us-head, #locations .locations-list, footer .container p, footer .container a, footer .container address {
+    font-size: 1rem;
+  }
+  #about-us .about-us-flex{
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav .navbar-brand img {
+    width: 30%;
+  }
+  #about-us .about-us-flex .about-us-spec{
+    width: 100%;
+  }
+}
