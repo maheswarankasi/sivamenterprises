@@ -1,15 +1,32 @@
 $(document).ready(function () {
-  const offcanvasEl = document.getElementById("offcanvasNavbar");
-  offcanvasEl.addEventListener("hidden.bs.offcanvas", function () {
-    // Prevent focus jump
-    document.activeElement.blur();
-  });
-  // Show button when scrolled down 100px
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $("#backToTop").fadeIn();
-    } else {
-      $("#backToTop").fadeOut();
+  // 1. Navbar Link Click - Close Offcanvas & Smooth Scroll
+  $(".navbar-nav .nav-link").on("click", function (event) {
+    // Offcanvas-ஐ கண்டுபிடிக்கவும்
+    var offcanvasElement = document.getElementById("offcanvasNavbar");
+    var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+
+    // Offcanvas open-ஆக இருந்தால் close செய்யவும்
+    if (bsOffcanvas) {
+      bsOffcanvas.hide();
+    }
+
+    // "index.html" அல்லது External link-ஆக இருந்தால் script-ஐ நிறுத்தவும்
+    // (Local link # ஆக இருந்தால் மட்டுமே scroll செய்யும்)
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      // Smooth Scroll using jQuery
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 80, // Header உயரத்திற்கு ஏற்ப -80ஐ மாற்றலாம்
+        },
+        800, // 800ms speed
+        function () {
+          // URL-ல் hash-ஐ சேர்க்க வேண்டாம் என நினைத்தால் இதை எடுத்துவிடலாம்
+          // window.location.hash = hash; 
+        }
+      );
     }
   });
 
