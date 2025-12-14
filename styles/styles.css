@@ -158,7 +158,7 @@ footer .container .credit {
   font-size: 0.5rem;
   width: 100%;
   text-align: right;
-  padding: 1rem;
+  padding-top: 1.5rem;
 }
 @media screen and (max-width: 1024px) {
 }
