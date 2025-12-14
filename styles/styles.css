@@ -49,8 +49,7 @@ header .navbar .offcanvas {
   width: 200px;
 }
 #homepage header {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgb(0, 0, 0, 0.6)),
-    url("../assets/images/banner-bg.jpg") no-repeat top left;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.73)), url("../assets/images/banner-bg.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -155,7 +154,12 @@ footer a {
   color: #333;
 }
 .reveal {opacity: 0;transform: translateY(50px);transition: all 0.6s ease;}.reveal.active {opacity: 1;transform: translateY(0);}
-
+footer .container .credit {
+  font-size: 0.5rem;
+  width: 100%;
+  text-align: right;
+  padding: 1rem;
+}
 @media screen and (max-width: 1024px) {
 }
 
