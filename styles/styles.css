@@ -160,8 +160,6 @@ footer .container .credit {
   text-align: right;
   padding-top: 1.5rem;
 }
-@media screen and (max-width: 1024px) {
-}
 
 @media screen and (max-width: 768px) {
   nav .navbar-brand img {
@@ -200,8 +198,8 @@ footer .container .credit {
   nav .navbar-brand img {
     width: 30%;
   }
-  .headline-sect {
-    margin: 50% auto;
+  #homepage header{
+    height: 60vh;
   }
   #about-us .about-us-flex .about-us-spec {
     width: 100%;
