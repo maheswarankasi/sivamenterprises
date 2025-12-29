@@ -49,7 +49,8 @@ header .navbar .offcanvas {
   width: 200px;
 }
 #homepage header {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.73)), url("../assets/images/banner-bg.jpg") no-repeat center center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.73)),
+    url("../assets/images/banner-bg.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
@@ -153,7 +154,15 @@ footer a {
   text-decoration: none;
   color: #333;
 }
-.reveal {opacity: 0;transform: translateY(50px);transition: all 0.6s ease;}.reveal.active {opacity: 1;transform: translateY(0);}
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 footer .container .credit {
   font-size: 0.5rem;
   width: 100%;
@@ -198,7 +207,7 @@ footer .container .credit {
   nav .navbar-brand img {
     width: 30%;
   }
-  #homepage header{
+  #homepage header {
     height: 60vh;
   }
   #about-us .about-us-flex .about-us-spec {
